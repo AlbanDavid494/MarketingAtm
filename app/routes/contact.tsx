@@ -8,17 +8,20 @@ export default function Contact (){
             <Header />
             <section className="py-20 bg-gradient-to-r from-purple-50 to-blue-50">
 <div className="container mx-auto">
-    <div className="grid gap-12 md:grid-cols-2">
+
+<Link to={"/"} className="text-purple-500 hover:text-purple-700 transition-colors tracking-tight px-4 mb-12 md:px-0">back home</Link>
+
+    <div className="grid gap-12 md:grid-cols-2 mt-4 px-4 md:px-0">
         <div>
-            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Get in Touch</h2>
-            <p className="mt-4 text-lg text-gray-60">Have questions? Fill out the form and we'll get back to you within 24 hours.</p>
+            <h2 className="text-3xl text-black font-bold tracking-tight sm:text-4xl">Get in Touch</h2>
+            <p className="mt-4 text-lg text-gray-600">Have questions? Fill out the form and we'll get back to you within 24 hours.</p>
             <div className="mt-8 space-y-6">
-                <div className="flex items-center">
+                <div className="flex items-center text-gray-600">
                 {/* <Mail className="mr-3 h-5 w-5 text-purple-600" /> */}
                 <span>albandavid494@gmail.com</span>
                 </div>
 
-                <div className="flex items-center">
+                <div className="flex items-center text-gray-600">
                     {/* <Phone className="mr-3 h-5 w-5 text-purple-600" /> */}
                     <span>+234 8114062518</span>
                   </div>
