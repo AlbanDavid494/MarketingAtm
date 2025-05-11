@@ -1,4 +1,5 @@
 import card from '../Components/card-hero.png'
+import { Link } from "react-router"
 
 
 const Hero = () => {
