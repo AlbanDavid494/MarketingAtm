@@ -38,11 +38,11 @@ export default function features() {
         <div className="py-20 bg-gradient-to-r from-purple-50 to-blue-50">
 <div className="container mx-auto">
 <div className="flex flex-col justify-center items-center">
-    <h2 className="uppercase text-2xl font-medium tracking-wide ">Features</h2>
+    <h2 className="uppercase text-2xl text-black font-medium tracking-wide ">Features</h2>
     <p className="text-gray-600 text-center p-4">Discover a new level of convenience and control with the moniepoint ATM card. <br /> Packed with features designed to simplify your transactions anf enhance your financial experiences.</p>
     </div>
 
-    <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {
         features.map((feature,index) => (
             <div key={index} className="rounded-lg border border-gray-200 bg-white p-6 shadow-sm transition-all hover:shadow-md">
