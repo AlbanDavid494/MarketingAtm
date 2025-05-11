@@ -40,19 +40,19 @@ const Header = () => {
 <div className="md:hidden">
   <div className="flex flex-col space-y-4 px-4 pt-2 pb-4 bg-white">
   <Link to={"/"}
-                className="text-sm font-medium hover:text-purple-600 transition-colors py-2"
+                className="text-sm font-medium text-purple-500 hover:text-purple-600 transition-colors py-2"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Home
               </Link>
   <Link to={"/feature"}
-                className="text-sm font-medium hover:text-purple-600 transition-colors py-2"
+                className="text-sm font-medium text-purple-500 hover:text-purple-600 transition-colors py-2"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 features
               </Link>
   <Link to={"/contact"}
-                className="text-sm font-medium hover:text-purple-600 transition-colors py-2"
+                className="text-sm font-medium text-purple-500 hover:text-purple-600 transition-colors py-2"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 contact

@@ -58,7 +58,7 @@ let year = date.getFullYear()
 <p className="text-sm text-gray-600 my-4" >Subscribe to our newsletter for the latest moniepoint updates and insghts.</p>
 
 <div className="flex flex-col gap-2 sm:flex-row max-w-md">
-<input type="email" placeholder="email@gmail.com" className="bg-white rounded-md px-2 md:py-0 py-4 outline-none border-gray-300 border text-sm" />
+<input type="email" placeholder="email@gmail.com" className="bg-white text-black rounded-md px-2 md:py-0 py-4 outline-none border-gray-300 border text-sm" />
 <button className="bg-blue-600 hover:bg-blue-700 md:p-2 rounded-md text-white p-4">Subscribe</button>
 </div>
 
