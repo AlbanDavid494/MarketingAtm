@@ -25,7 +25,7 @@ const Header = () => {
 
 <button className="md:hidden" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} aria-label="Toggle menu">
   {
-    isMobileMenuOpen ?  <IoMdClose  /> : <RxHamburgerMenu /> 
+    isMobileMenuOpen ?  <IoMdClose className="text-black" /> : <RxHamburgerMenu className="text-black" /> 
   }
 </button>
 <Link to={"https://moniepoint.sng.link/Dg42r/m0cx?_smtype=3"}><button className="bg-gradient-to-r to-purple-600 from-blue-500 hover:bg-purple-700 p-2 font-medium transition-all cursor-pointer rounded-md text-white">Sign in</button></Link>
