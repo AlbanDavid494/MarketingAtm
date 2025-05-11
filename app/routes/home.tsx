@@ -19,27 +19,22 @@ export function meta({}: Route.MetaArgs) {
 
 export default function Home() {
   const features = [
-    {
-          image: card,
-          title: "SEO Optimization",
-          description: "Improve your website's visibility in search engines and drive organic traffic.",
-        },
         {
           image: delivery,
-          title: "PPC Advertising",
-          description: "Create targeted ad campaigns that deliver immediate results and ROI.",
+          title: "Online Transactions",
+          description: "You can ue your moniepoint card for online Payment and subscriptions.",
         },
         {
           // icon: <Mail className="h-10 w-10 text-purple-600" />,
           image: atm,
-          title: "Email Marketing",
-          description: "Nurture leads and drive conversions with personalized email campaigns.",
+          title: "Secure banking",
+          description: "Moniepoint uses security measures to protect your financial information.",
         },
         {
           // icon: <Target className="h-10 w-10 text-purple-600" />,
           image: cardAtm,
-          title: "Content Marketing",
-          description: "Create valuable content that attracts and engages your target audience.",
+          title: "24/7 Support",
+          description: "Access around-the-clock customers suport for any card-related issues.",
         },
 ]
   
@@ -50,8 +45,10 @@ export default function Home() {
       <Hero />
 {/* features */}
 <section className="py-20 px-4 md:px-0 container mx-auto">
-
+<div className="flex justify-center flex-col">
 <h2 className="text-center text-3xl font-bold tracking-tight sm:text-4xl">Features</h2>
+<p className="text-gray-600 text-center p-4">Discover a new level of convenience and control with the moniepoint ATM card. <br /> Packed with features designed to simplify your transactions anf enhance your financial experiences.</p>
+</div>
 <div className="mt-4 grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 {
   features.map((service, index) => (
@@ -64,8 +61,8 @@ export default function Home() {
 </div>
     ))}
 </div>
-<div className="text-center">
-<button className="p-2 rounded-md text-white bg-purple-500 hover:bg-purple-700 cursor-pointer tracking-tight mt-4">view more</button>
+<div className="text-center mt-4 md:mt-6">
+<Link to={'/features'} className="p-2 rounded-md text-white bg-purple-500 hover:bg-purple-700 cursor-pointer tracking-tight mt-4">view more</Link>
 </div>
 
 </section>

@@ -1,15 +1,33 @@
+import { CiLocationArrow1, CiMail } from "react-icons/ci";
+import { FaArrowLeft, FaFacebookF, FaInstagram, FaLinkedin, FaPhoneAlt } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 import { Link } from "react-router";
 import Footer from "~/Components/Footer";
 import Header from "~/Components/Header";
 
 export default function Contact (){
+  const socailIcons = [
+    {
+    icons: <FaFacebookF />,
+    },
+    {
+      icons:  <FaXTwitter />
+    },
+   {
+    icons: <FaInstagram />
+   },
+   {
+    icons: <FaLinkedin />
+   }   
+  ]
+
     return(
         <div>
             <Header />
             <section className="py-20 bg-gradient-to-r from-purple-50 to-blue-50">
 <div className="container mx-auto">
 
-<Link to={"/"} className="text-purple-500 hover:text-purple-700 transition-colors tracking-tight px-4 mb-12 md:px-0">back home</Link>
+<Link to={"/"} className="text-purple-500 hover:text-purple-700 transition-colors tracking-tight px-4 mb-12 md:px-0 flex gap-x-3 items-center"> <FaArrowLeft /> back home</Link>
 
     <div className="grid gap-12 md:grid-cols-2 mt-4 px-4 md:px-0">
         <div>
@@ -17,27 +35,27 @@ export default function Contact (){
             <p className="mt-4 text-lg text-gray-600">Have questions? Fill out the form and we'll get back to you within 24 hours.</p>
             <div className="mt-8 space-y-6">
                 <div className="flex items-center text-gray-600">
-                {/* <Mail className="mr-3 h-5 w-5 text-purple-600" /> */}
+                <CiMail className="mr-3 h-5 w-5 text-purple-600" />
                 <span>albandavid494@gmail.com</span>
                 </div>
 
                 <div className="flex items-center text-gray-600">
-                    {/* <Phone className="mr-3 h-5 w-5 text-purple-600" /> */}
+                    <FaPhoneAlt className="mr-3 h-5 w-5 text-purple-600" />
                     <span>+234 8114062518</span>
                   </div>
 
-                  {/* <div className="mt-4 flex space-x-4">
-                    {["facebook", "twitter", "instagram", "linkedin"].map((social) => (
+                  <div className="mt-4 flex space-x-4">
+                    {socailIcons.map((icon, index) => (
                       <Link to={"jjjj"}
-                        key={social}
+                        key={index}
                     
-                        className="flex h-10 w-10 items-center justify-center rounded-full bg-gray-100 text-gray-600 transition-colors hover:bg-purple-600 hover:text-white"
+                        className="flex h-10 w-10 items-center justify-center rounded-full bg-purple-200 text-gray-600 transition-colors hover:bg-purple-600 hover:text-white"
                       >
-                        <span className="sr-only">{social}</span>
-                        <div className="h-5 w-5"></div>
+                        
+                        <div className="h-5 w-5">{icon.icons}</div>
                       </Link>
                     ))}
-                  </div> */}
+                  </div>
             </div>
         </div>
 
@@ -94,8 +112,8 @@ export default function Contact (){
                       placeholder="Tell me about your issue.."
                     ></textarea>
                   </div>
-                  <button type="submit" className="w-full bg-purple-600 rounded-md p-2 hover:bg-purple-700">
-                    Send Message
+                  <button type="submit" className="w-full flex justify-center gap-x-2 text-white items-center bg-purple-600 rounded-md p-2 hover:bg-purple-700">
+                    Send Message <CiLocationArrow1 className="font-bold mt-2" />
                   </button>
                 </form>
         </div>
