@@ -17,7 +17,7 @@ let year = date.getFullYear()
 </div>
 
 <div>
-<h3 className="tracking-wider font-medium uppercase text-sm">Company</h3>
+<h3 className="tracking-wider font-medium uppercase text-sm text-black">Company</h3>
 <ul className="gap-8 mt-4">
   <li><Link to={"age"} className="text-gray-600 text-sm hover:text-purple-600">Home</Link></li>
 
@@ -33,7 +33,7 @@ let year = date.getFullYear()
 </div>
 
 <div> 
-<h3 className="uppercase font-medium text-sm tracking-wider">Services</h3>
+<h3 className="uppercase font-medium text-sm tracking-wider text-black">Services</h3>
 <ul>
 <li>
   <Link to={"age"} className="text-gray-600 text-sm hover:text-purple-600">POS Terminal Services</Link>
@@ -54,7 +54,7 @@ let year = date.getFullYear()
 </div>
 
 <div>
-<h3 className="font-medium uppercase tracking-wider text-sm">Subscribe</h3>
+<h3 className="font-medium uppercase tracking-wider text-sm text-black">Subscribe</h3>
 <p className="text-sm text-gray-600 my-4" >Subscribe to our newsletter for the latest moniepoint updates and insghts.</p>
 
 <div className="flex flex-col gap-2 sm:flex-row max-w-md">

@@ -61,7 +61,7 @@ export default function Home() {
 </div>
     ))}
 </div>
-<div className="text-center mt-4 md:mt-6">
+<div className="text-center mt-5 md:mt-6">
 <Link to={'/features'} className="p-2 rounded-md text-white bg-purple-500 hover:bg-purple-700 cursor-pointer tracking-tight mt-4">view more</Link>
 </div>
 

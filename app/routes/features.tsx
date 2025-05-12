@@ -4,6 +4,8 @@ import card from "./atm.jpeg"
 import delivery from "./delivery.jpeg"
 import atm from "./card-one.jpeg"
 import cardAtm from "./card.jpeg"
+import { FaArrowLeft } from "react-icons/fa";
+import { Link } from "react-router";
 
 
 
@@ -35,8 +37,11 @@ export default function features() {
   return (
     <>
         <Header />
-        <div className="py-20 bg-gradient-to-r from-purple-50 to-blue-50">
+        <div className="py-15 bg-gradient-to-r from-purple-50 to-blue-50">
 <div className="container mx-auto">
+
+<Link to={"/"} className="text-purple-500 hover:text-purple-700 transition-colors tracking-tight px-4 mb-12 md:px-0 flex gap-x-3 items-center"> <FaArrowLeft /> back home</Link>
+
 <div className="flex flex-col justify-center items-center">
     <h2 className="uppercase text-2xl text-black font-medium tracking-wide ">Features</h2>
     <p className="text-gray-600 text-center p-4">Discover a new level of convenience and control with the moniepoint ATM card. <br /> Packed with features designed to simplify your transactions anf enhance your financial experiences.</p>

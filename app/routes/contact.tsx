@@ -24,12 +24,12 @@ export default function Contact (){
     return(
         <div>
             <Header />
-            <section className="py-20 bg-gradient-to-r from-purple-50 to-blue-50">
+            <section className="py-15 bg-gradient-to-r from-purple-50 to-blue-50">
 <div className="container mx-auto">
 
 <Link to={"/"} className="text-purple-500 hover:text-purple-700 transition-colors tracking-tight px-4 mb-12 md:px-0 flex gap-x-3 items-center"> <FaArrowLeft /> back home</Link>
 
-    <div className="grid gap-12 md:grid-cols-2 mt-4 px-4 md:px-0">
+    <div className="grid gap-12 md:grid-cols-2 mt-2 md:mt-4 px-4 md:px-0">
         <div>
             <h2 className="text-3xl text-black font-bold tracking-tight sm:text-4xl">Get in Touch</h2>
             <p className="mt-4 text-lg text-gray-600">Have questions? Fill out the form and we'll get back to you within 24 hours.</p>
@@ -94,9 +94,9 @@ export default function Contact (){
                       id="service"
                       className="mt-1 block w-full rounded-md border border-gray-300 px-3 py-2 shadow-sm focus:border-purple-500 focus:outline-none focus:ring-purple-500"
                     >
-                      <option value="">I don't have moniepoint account?</option>
-                      <option value="seo">i have network issues with my POS Terminal</option>
-                      <option value="ppc">
+                      <option value="" className="text-gray-700">I don't have moniepoint account?</option>
+                      <option value="seo" className="text-gray-700">i have network issues with my POS Terminal</option>
+                      <option value="ppc" className="text-gray-700">
                         I need moniepoint atm card
                       </option>                    
                     </select>
